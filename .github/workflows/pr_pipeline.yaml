@@ -30,7 +30,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Debug: show access token oid
+      - name: Debug show access token oid
         run: |
           az account get-access-token --resource https://cosmos.azure.com/ -o json > /tmp/token.json
           OID=$(jq -r '.accessToken' /tmp/token.json | cut -d. -f2 | base64 --decode | jq -r '.oid')
