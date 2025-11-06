@@ -1,0 +1,7 @@
+POST https://ca-glsptgcarru5u-orchestrator.whiteocean-8e27379a.swedencentral.azurecontainerapps.io/orchestrator
+Content-Type: application/json
+
+{
+    "conversation_id": "",
+    "ask": "Describe the Contoso Electronics employee benefits program."
+}  
